@@ -1,3 +1,5 @@
+import chiSiamo from "@/assets/chi-siamo.png";
+
 const values = [
   { title: "Sicurezza", desc: "Protocolli rigorosi e formazione continua del personale" },
   { title: "Puntualità", desc: "Rispettiamo i tempi di consegna con pianificazione accurata" },
@@ -9,14 +11,13 @@ export default function About() {
   return (
     <section id="chi-siamo" className="section-padding bg-background">
       <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
-        {/* Image */}
         <div className="scroll-reveal relative">
-          <div className="aspect-[4/5] bg-surface-mid relative">
+          <div className="aspect-[4/5] relative overflow-hidden">
             <div className="accent-bar-left" />
+            <img src={chiSiamo} alt="New Holland E245 con logo S.IM in cantiere" className="w-full h-full object-cover" />
           </div>
         </div>
 
-        {/* Content */}
         <div className="scroll-reveal flex flex-col justify-center">
           <span className="eyebrow mb-4">Chi Siamo</span>
           <h2 className="font-display text-5xl md:text-6xl text-foreground mb-8">UN'IMPRESA DI VALORE</h2>
