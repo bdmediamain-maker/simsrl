@@ -2,10 +2,10 @@ import { useState, useEffect, useCallback } from "react";
 import demolizioni from "@/assets/demolizioni.png";
 import scavi from "@/assets/scavi.png";
 import catDaf from "@/assets/cat-daf.png";
-import demolizioni1 from "@/assets/#demolizioni1.jpg";
-import demolizioni2 from "@/assets/#demolizioni2.jpg";
-import demolizioni3 from "@/assets/#demolizioni3.jpg";
-import demolizioni4 from "@/assets/#demolizioni4.jpg";
+import demolizioni1 from "@/assets/demolizioni1.jpg";
+import demolizioni2 from "@/assets/demolizioni2.jpg";
+import demolizioni3 from "@/assets/demolizioni3.jpg";
+import demolizioni4 from "@/assets/demolizioni4.jpg";
 
 const demolizioniGallery = [
   { src: demolizioni1, alt: "Demolizione edificio residenziale con escavatore New Holland" },
