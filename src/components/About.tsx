@@ -22,7 +22,7 @@ export default function About() {
           <span className="eyebrow mb-4">Chi Siamo</span>
           <h2 className="font-display text-5xl md:text-6xl text-foreground mb-8">UN'IMPRESA DI VALORE</h2>
           <p className="text-secondary-foreground font-light leading-relaxed mb-10">
-            S.IM SRL nasce dall'esperienza e dalla passione per il lavoro ben fatto. Con anni di attività nel settore delle demolizioni, degli scavi e dei trasporti, siamo diventati un punto di riferimento per imprese edili, committenti pubblici e privati in tutto il territorio. La nostra forza sta nella capacità di gestire progetti complessi con un team specializzato, macchinari all'avanguardia e un approccio orientato alla sicurezza e alla sostenibilità.
+            S.IM SRL nasce dall'esperienza e dalla passione per il lavoro ben fatto. Con anni di attività nel settore delle demolizioni, degli scavi e dei trasporti, siamo diventati un punto di riferimento per imprese edili, committenti pubblici e privati in tutto il territorio. La nostra forza sta nella capacità di gestire progetti complessi con un team specializzato, macchinari all'avanguardia e un approccio orientato alla:
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
