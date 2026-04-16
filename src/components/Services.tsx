@@ -2,6 +2,17 @@ import { useState, useEffect, useCallback } from "react";
 import demolizioni from "@/assets/demolizioni.png";
 import scavi from "@/assets/scavi.png";
 import catDaf from "@/assets/cat-daf.png";
+import demolizioni1 from "@/assets/#demolizioni1.jpg";
+import demolizioni2 from "@/assets/#demolizioni2.jpg";
+import demolizioni3 from "@/assets/#demolizioni3.jpg";
+import demolizioni4 from "@/assets/#demolizioni4.jpg";
+
+const demolizioniGallery = [
+  { src: demolizioni1, alt: "Demolizione edificio residenziale con escavatore New Holland" },
+  { src: demolizioni2, alt: "Demolizione abitazione con macchinario CAT giallo" },
+  { src: demolizioni3, alt: "Demolizione struttura industriale con escavatore CAT" },
+  { src: demolizioni4, alt: "Demolizione capannone industriale con escavatore" },
+];
 
 const extendedDescs: Record<string, string> = {
   "01": "Eseguiamo demolizioni parziali e totali di edifici civili, residenziali e industriali. Il nostro approccio prevede un'analisi preliminare della struttura, la pianificazione delle fasi operative e l'utilizzo di macchinari di ultima generazione come il New Holland E245. Gestiamo lo smaltimento dei materiali di risulta nel rispetto delle normative ambientali vigenti, con particolare attenzione alla separazione e al recupero degli inerti.",
@@ -106,13 +117,23 @@ function ServiceModal({ service, onClose }: { service: typeof services[number]; 
             {extendedDescs[service.num]}
           </p>
 
-          {/* Media placeholder grid */}
+          {/* Media grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[0, 1, 2, 3].map((i) => (
-              <div key={i} className="aspect-video bg-secondary border border-border flex items-center justify-center">
-                <span className="font-condensed text-xs text-muted-foreground">Foto / Video — disponibile a breve</span>
-              </div>
-            ))}
+            {service.num === "01"
+              ? demolizioniGallery.map((img, i) => (
+                  <div key={i} className="group overflow-hidden aspect-video">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                ))
+              : [0, 1, 2, 3].map((i) => (
+                  <div key={i} className="aspect-video bg-secondary border border-border flex items-center justify-center">
+                    <span className="font-condensed text-xs text-muted-foreground">Foto / Video — disponibile a breve</span>
+                  </div>
+                ))}
           </div>
         </div>
       </div>
