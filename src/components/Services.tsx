@@ -6,6 +6,10 @@ import demolizioni1 from "@/assets/demolizioni1.jpg";
 import demolizioni2 from "@/assets/demolizioni2.jpg";
 import demolizioni3 from "@/assets/demolizioni3.jpg";
 import demolizioni4 from "@/assets/demolizioni4.jpg";
+import scavo1 from "@/assets/scavo1.jpg";
+import scavo2 from "@/assets/scavo2.jpg";
+import scavo3video from "@/assets/scavo3.mp4";
+import scavo4 from "@/assets/scavo4.jpg";
 
 const demolizioniGallery = [
   { src: demolizioni1, alt: "Demolizione edificio residenziale con escavatore New Holland" },
@@ -129,6 +133,21 @@ function ServiceModal({ service, onClose }: { service: typeof services[number]; 
                     />
                   </div>
                 ))
+              : service.num === "02"
+              ? ([
+                  <div key={0} className="group overflow-hidden aspect-video">
+                    <img src={scavo1} alt="Escavatore Hitachi durante scavo di fondazione" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>,
+                  <div key={1} className="group overflow-hidden aspect-video">
+                    <img src={scavo2} alt="Hitachi ZAXIS 240N in cantiere scavo" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>,
+                  <div key={2} className="aspect-video bg-black overflow-hidden">
+                    <video src={scavo3video} controls muted playsInline className="w-full h-full object-cover" />
+                  </div>,
+                  <div key={3} className="group overflow-hidden aspect-video">
+                    <img src={scavo4} alt="Escavatore CAT durante movimento terra" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>,
+                ])
               : [0, 1, 2, 3].map((i) => (
                   <div key={i} className="aspect-video bg-secondary border border-border flex items-center justify-center">
                     <span className="font-condensed text-xs text-muted-foreground">Foto / Video — disponibile a breve</span>
