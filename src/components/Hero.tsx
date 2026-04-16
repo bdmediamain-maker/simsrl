@@ -28,16 +28,16 @@ export default function Hero() {
           style={{ background: "linear-gradient(135deg, hsl(46 100% 45%), hsl(24 100% 42%))" }} />
       </div>
 
-      <div className="relative z-10 section-padding w-full max-w-[1400px] mx-auto pt-32 pb-20">
+      <div className="relative z-10 section-padding w-full max-w-[1400px] mx-auto pt-24 md:pt-32 pb-20">
         <div className="flex items-center gap-4 mb-8 scroll-reveal">
           <div className="w-12 h-[2px] bg-primary" />
           <span className="eyebrow">Eccellenza nell'edilizia industriale</span>
         </div>
 
         <h1 className="scroll-reveal mb-8">
-          <span className="block font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-foreground leading-[0.9]">DEMOLIAMO.</span>
-          <span className="block font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-gradient-hero leading-[0.9] text-outline">SCAVIAMO.</span>
-          <span className="block font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-primary leading-[0.9]">TRASPORTIAMO.</span>
+          <span className="block font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-foreground leading-[0.9]">DEMOLIAMO.</span>
+          <span className="block font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-gradient-hero leading-[0.9] text-outline">SCAVIAMO.</span>
+          <span className="block font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-primary leading-[0.9]">TRASPORTIAMO.</span>
         </h1>
 
         <p className="scroll-reveal max-w-2xl text-secondary-foreground font-light text-lg md:text-xl mb-10 leading-relaxed">
