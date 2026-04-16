@@ -1,3 +1,5 @@
+import coperturaTerritoriale from "@/assets/copertura territoriale sfondo.jpg";
+
 const areas = [
   "Edilizia Residenziale e Civile",
   "Infrastrutture e Opere Pubbliche",
@@ -26,12 +28,15 @@ export default function Areas() {
         </div>
 
         {/* Info block */}
-        <div className="scroll-reveal relative aspect-square lg:aspect-auto bg-secondary overflow-hidden flex items-center justify-center">
+        <div className="scroll-reveal relative overflow-hidden aspect-square lg:aspect-auto bg-secondary">
+          <img
+            src={coperturaTerritoriale}
+            alt="Copertura territoriale S.IM SRL"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/70" />
           <div className="accent-bar-left" />
-          <span className="absolute font-display text-7xl md:text-8xl lg:text-9xl text-foreground/5 select-none whitespace-nowrap">
-            Medicina (BO)
-          </span>
-          <div className="relative z-10 px-8 md:px-12">
+          <div className="relative z-10 p-10 flex flex-col justify-end h-full">
             <span className="eyebrow mb-4 block">Copertura Territoriale</span>
             <p className="text-secondary-foreground font-light leading-relaxed max-w-md">
               Operiamo principalmente in Emilia-Romagna con disponibilità su tutto il territorio nazionale. Contattaci per valutare interventi fuori area.
