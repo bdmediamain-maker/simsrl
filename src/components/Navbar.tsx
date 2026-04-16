@@ -82,10 +82,14 @@ export default function Navbar() {
         <div className="pb-12 px-8 flex flex-col items-center gap-3">
           <a href="tel:+393342886555" className="font-condensed text-sm tracking-widest text-secondary-foreground">334 288 6555</a>
           <a href="mailto:silvestrosimsri@gmail.com" className="font-condensed text-sm tracking-widest text-secondary-foreground">silvestrosimsri@gmail.com</a>
-          <a href="https://instagram.com/s.im_srl" target="_blank" rel="noopener" className="font-condensed text-sm tracking-widest text-primary inline-flex items-center gap-2">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
-            @s.im_srl
-          </a>
+          <div className="flex gap-4">
+            <a href="https://www.instagram.com/s.im_srl" target="_blank" rel="noopener" className="text-secondary-foreground hover:text-primary transition-colors">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100092708657850" target="_blank" rel="noopener" className="text-secondary-foreground hover:text-primary transition-colors">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+            </a>
+          </div>
         </div>
       </div>
     </>
