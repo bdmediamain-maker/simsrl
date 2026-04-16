@@ -25,9 +25,18 @@ export default function Areas() {
           </ul>
         </div>
 
-        {/* Visual placeholder */}
-        <div className="scroll-reveal relative aspect-square lg:aspect-auto bg-secondary">
+        {/* Info block */}
+        <div className="scroll-reveal relative aspect-square lg:aspect-auto bg-secondary overflow-hidden flex items-center justify-center">
           <div className="accent-bar-left" />
+          <span className="absolute font-display text-7xl md:text-8xl lg:text-9xl text-foreground/5 select-none whitespace-nowrap">
+            Medicina (BO)
+          </span>
+          <div className="relative z-10 px-8 md:px-12">
+            <span className="eyebrow mb-4 block">Copertura Territoriale</span>
+            <p className="text-secondary-foreground font-light leading-relaxed max-w-md">
+              Operiamo principalmente in Emilia-Romagna con disponibilità su tutto il territorio nazionale. Contattaci per valutare interventi fuori area.
+            </p>
+          </div>
         </div>
       </div>
     </section>
