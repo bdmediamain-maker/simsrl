@@ -10,6 +10,10 @@ import scavo1 from "@/assets/scavo1.jpg";
 import scavo2 from "@/assets/scavo2.jpg";
 import scavo3video from "@/assets/scavo3.mp4";
 import scavo4 from "@/assets/scavo4.jpg";
+import trasporti1 from "@/assets/trasporti1.jpg";
+import trasporti2 from "@/assets/trasporti2.jpg";
+import trasporti3 from "@/assets/trasporti3.jpg";
+import trasporti4 from "@/assets/trasporti4.jpg";
 
 const demolizioniGallery = [
   { src: demolizioni1, alt: "Demolizione edificio residenziale con escavatore New Holland" },
@@ -148,11 +152,20 @@ function ServiceModal({ service, onClose }: { service: typeof services[number]; 
                     <img src={scavo4} alt="Escavatore CAT durante movimento terra" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   </div>,
                 ])
-              : [0, 1, 2, 3].map((i) => (
-                  <div key={i} className="aspect-video bg-secondary border border-border flex items-center justify-center">
-                    <span className="font-condensed text-xs text-muted-foreground">Foto / Video — disponibile a breve</span>
-                  </div>
-                ))}
+              : ([
+                  <div key={0} className="group overflow-hidden aspect-video">
+                    <img src={trasporti1} alt="Trasporto escavatore CAT su carrellone S.IM SRL" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>,
+                  <div key={1} className="group overflow-hidden aspect-video">
+                    <img src={trasporti2} alt="Camion MAN con escavatore CAT 318E in cantiere" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>,
+                  <div key={2} className="group overflow-hidden aspect-video">
+                    <img src={trasporti3} alt="Trasporto travi in acciaio su carrellone in capannone" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>,
+                  <div key={3} className="group overflow-hidden aspect-video">
+                    <img src={trasporti4} alt="Trasporto macchinario su carrellone in zona industriale" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>,
+                ])}
           </div>
         </div>
       </div>
