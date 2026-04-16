@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <span className="text-muted-foreground text-xs font-light">© 2025 S.IM SRL — Tutti i diritti riservati</span>
-          <span className="text-muted-foreground text-xs font-light">P.IVA: da completare</span>
+          <span className="text-muted-foreground text-xs font-light">C.F. / P.IVA: 03XXXXXXXX</span>
         </div>
       </div>
     </footer>
