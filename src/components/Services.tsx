@@ -52,9 +52,6 @@ export default function Services() {
             <span className="eyebrow mb-4 block">I Nostri Servizi</span>
             <h2 className="font-display text-5xl md:text-6xl text-foreground">COSA FACCIAMO</h2>
           </div>
-          <p className="scroll-reveal max-w-md text-secondary-foreground font-light leading-relaxed">
-            Offriamo soluzioni complete per demolizioni, scavi e trasporti con un parco mezzi all'avanguardia e personale altamente qualificato.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-[2px]">
